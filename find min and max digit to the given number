@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+                int num=sc.nextInt();
+                int max=0,min=num%10,rem;
+        while(num>0) {
+            rem = num % 10;
+            if (rem < min) {
+                min = rem;
+            }
+            if (rem > max) {
+                max =rem;
+
+            }
+            num = num / 10;
+        }
+        System.out.println("min:"+min);
+        System.out.println("max:"+max);
+    }
+}
