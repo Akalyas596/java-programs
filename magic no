@@ -1,0 +1,19 @@
+public class Nomagic {
+    public static void main(String[] args){
+        int n=50113;
+        while(n>9) //loop while number greater than 1 digit
+            {
+            int sum=0; //reset sum each time
+            while (n > 0) {
+                sum += n % 10; //extract &sum digits
+                n = n / 10;
+            }
+            n = sum;
+        }
+            if (n == 1)
+                System.out.println("magic no");
+            else
+
+                System.out.println("not magic no");
+    }
+}
