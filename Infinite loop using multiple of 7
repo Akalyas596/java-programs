@@ -1,0 +1,14 @@
+public class Infinite  {
+    public static void main(String[] args) {
+        int i = 1, n = 7;
+        while(true){
+
+                int result = i * 7;
+                if(result>9999)
+                    break;
+                i++;
+                System.out.println(result);
+            }
+        }
+
+    }
