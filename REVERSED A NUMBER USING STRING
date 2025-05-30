@@ -1,0 +1,9 @@
+public class builder {
+    public static void main(String[] args){
+        int n =123;
+        String s1=String.valueOf(n);//String.valueOf(n)-->USED TO CONVERT INT INTO STRING
+        StringBuilder s2=new StringBuilder(s1);//-StringBuilder -->it is used fast & optimised performance
+        String s3=s2.reverse().toString();
+        System.out.println(Integer.parseInt(s3));
+    }
+}
