@@ -1,0 +1,18 @@
+public class ALPHABET_COUNT {
+    public static void main(String[] args){
+        String s="india@12345";
+        int j=0,count=0;
+        // APPROACH 1
+       String data=s.replaceAll("[^a-zA-Z]","");
+        System.out.println(data.length());
+        // APPROACH 2
+        while (j<s.length()){
+            if(s.charAt(j) >='a'&& s.charAt(j) <= 'z' || s.charAt(j) >= 'A' && s.charAt(j) <= 'Z' ){
+                count++;
+            }
+            j++;
+            System.out.println(count);
+            }
+
+    }
+}
